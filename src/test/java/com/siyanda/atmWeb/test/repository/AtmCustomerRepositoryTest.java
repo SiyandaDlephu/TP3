@@ -46,27 +46,7 @@ public class AtmCustomerRepositoryTest {
                  .firstname("Siyanda")
                  .atmcust();
          
-//         ChangePin c = new ChangePin
-//                .ChangingPin("1234")
-//                 .newPIn("4321")
-//                 .id(1L)
-//                 .changepin();
-//         
-//         CardExpired cx = new CardExpired
-//                 .CheckCard()
-//                 .dataExp("15-sep-2015")
-//                 .id(1L)
-//                 .expired();
-//         
-//        CardValidation cv = new CardValidation
-//                .CardValidate()
-//                .check("yes")
-//                .id(1L)
-//                .cardvalidation();
-                
-//         atmcustomer.setId(id);
-         
-         repo.save(atmcustomer);
+        repo.save(atmcustomer);
          id = atmcustomer.getId();
          Assert.assertNotNull(atmcustomer);
      

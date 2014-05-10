@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="2" time="10.181" errors="0" skipped="2" tests="6" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386"/>
+    <property name="java.vm.version" value="23.7-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/inathi-zenande/NetBeansProjects/atmWebbb"/>
+    <property name="java.runtime.version" value="1.7.0_21-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-i386/jre/lib/endorsed"/>
+    <property name="os.arch" value="i386"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/home/inathi-zenande/netbeans-7.4/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/home/inathi-zenande/netbeans-7.4/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/lib/jvm/default-java/jre/lib/amd64:/usr/lib/jvm/default-java/jre/lib/i386::/usr/java/packages/lib/i386:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers"/>
+    <property name="os.version" value="3.8.0-19-generic"/>
+    <property name="user.home" value="/home/inathi-zenande"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="user.name" value="inathi-zenande"/>
+    <property name="java.class.path" value="/home/inathi-zenande/netbeans-7.4/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-i386/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/inathi-zenande/netbeans-7.4/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_21"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/netx.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/plugin.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/inathi-zenande/netbeans-7.4/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.147" classname="com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest" name="createAtmCustomer"/>
+  <testcase time="0.228" classname="com.siyanda.atmWeb.test.services.AtmCustomerServiceTest" name="getAtmCustomer">
+    <failure message="could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement" type="org.springframework.dao.DataIntegrityViolationException">org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:189)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:155)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:417)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:59)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:147)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.LockModeRepositoryPostProcessor$LockModePopulatingMethodIntercceptor.invoke(LockModeRepositoryPostProcessor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy32.save(Unknown Source)
+	at com.siyanda.atmWeb.test.services.AtmCustomerServiceTest.getAtmCustomer(AtmCustomerServiceTest.java:52)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:72)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:190)
+	at org.hibernate.id.insert.AbstractSelectingDelegate.performInsert(AbstractSelectingDelegate.java:61)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3032)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3558)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:98)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:490)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:195)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:179)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:214)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:324)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:288)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:194)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:84)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:206)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:149)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:75)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:811)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:784)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:789)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:262)
+	at com.sun.proxy.$Proxy31.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:369)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:358)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	... 42 more
+Caused by: java.sql.SQLIntegrityConstraintViolationException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by &apos;UK_TLFA94IMYJ3QXRP4TS4481G36&apos; defined on &apos;ATMCUSTOMER&apos;.
+	at org.apache.derby.client.am.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.PreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:187)
+	... 81 more
+Caused by: org.apache.derby.client.am.SqlException: The statement was aborted because it would have caused a duplicate key value in a unique or primary key constraint or unique index identified by &apos;UK_TLFA94IMYJ3QXRP4TS4481G36&apos; defined on &apos;ATMCUSTOMER&apos;.
+	at org.apache.derby.client.am.Statement.completeExecute(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.parseEXCSQLSTTreply(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.readExecute(Unknown Source)
+	at org.apache.derby.client.net.StatementReply.readExecute(Unknown Source)
+	at org.apache.derby.client.net.NetPreparedStatement.readExecute_(Unknown Source)
+	at org.apache.derby.client.am.PreparedStatement.readExecute(Unknown Source)
+	at org.apache.derby.client.am.PreparedStatement.flowExecute(Unknown Source)
+	at org.apache.derby.client.am.PreparedStatement.executeUpdateX(Unknown Source)
+	... 85 more
+</failure>
+  </testcase>
+  <testcase time="0.021" classname="com.siyanda.atmWeb.test.services.TotalAtmCustomerServiceTest" name="totalAtmCustomer"/>
+  <testcase time="0.026" classname="com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest" name="readAtmCustomer">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest.readAtmCustomer(AtmCustomerRepositoryTest.java:79)
+</failure>
+  </testcase>
+  <testcase time="0.027" classname="com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest" name="updateAtmCustomer">
+    <skipped/>
+  </testcase>
+  <testcase time="0.028" classname="com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest" name="deleteAtmCustomer">
+    <skipped/>
+  </testcase>
+</testsuite>

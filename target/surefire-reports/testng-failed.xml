@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest">
+        <methods>
+          <include name="deleteAtmCustomer"/>
+          <include name="updateAtmCustomer"/>
+          <include name="createAtmCustomer"/>
+          <include name="readAtmCustomer"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest] -->

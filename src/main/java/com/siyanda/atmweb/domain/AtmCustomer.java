@@ -32,8 +32,8 @@ public class AtmCustomer implements Serializable {
     @Column(unique = true)
     private String pinNumber;
     
-//    @Embedded
-//    private ChangePin changepin;
+    @Embedded
+    private ChangePin changepin;
 //    @Embedded
 //    private CardExpired cardexpired;
 //    @Embedded
@@ -56,7 +56,7 @@ public class AtmCustomer implements Serializable {
         id = customer.id;
         firstname = customer.firstname;
         pinNumber = customer.pinNumber;
-//        changepin =customer.changepin;
+        changepin =customer.changepin;
 //        cardexpired =customer.cardexpired;
 //        cardvalidation = customer.cardvalidation;
 //        registerphone =customer.registerphone;
@@ -69,8 +69,8 @@ public class AtmCustomer implements Serializable {
         private String firstname;
         private String pinNumber;
         private ChangePin changepin;
-//        private CardExpired cardexpired;
-//        private CardValidation cardvalidation;
+        private CardExpired cardexpired;
+        private CardValidation cardvalidation;
 //        List<RegisterPhone> registerphone;
 //        List<Atm> atm;
         
@@ -118,10 +118,11 @@ public class AtmCustomer implements Serializable {
             id = atmcust.getId();
             firstname = atmcust.getFirstname();
             pinNumber = atmcust.getPinNumber();
-//            changepin = atmcust.getChangepin();
+            changepin = atmcust.getChangepin();
 //            cardexpired =atmcust.getCardexpired();
 //            cardvalidation =atmcust.getCardvalidation();
 //            registerphone = atmcust.getRegisterphone();
+ //           atm = atmcust.getAtm();
             return this;
         }
      
@@ -151,9 +152,9 @@ public class AtmCustomer implements Serializable {
         return pinNumber;
     }
 
-//    public ChangePin getChangepin() {
-//        return changepin;
-//    }
+    public ChangePin getChangepin() {
+        return changepin;
+    }
 //
 //    public CardExpired getCardexpired() {
 //        return cardexpired;

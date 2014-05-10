@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest">
+        <methods>
+          <include name="tearDownMethod"/>
+          <include name="deleteAtmCustomer"/>
+          <include name="updateAtmCustomer"/>
+          <include name="createAtmCustomer"/>
+          <include name="tearDownClass"/>
+          <include name="readAtmCustomer"/>
+          <include name="setUpClass"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- com.siyanda.atmWeb.test.repository.AtmCustomerRepositoryTest -->
+      <class name="com.siyanda.atmWeb.test.services.AtmCustomerServiceTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="getAtmCustomer"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpClass"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- com.siyanda.atmWeb.test.services.AtmCustomerServiceTest -->
+      <class name="com.siyanda.atmWeb.test.services.TotalAtmCustomerServiceTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- com.siyanda.atmWeb.test.services.TotalAtmCustomerServiceTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
